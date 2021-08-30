@@ -14,11 +14,12 @@ while [[ $# -gt 0 ]];do echo "$#"; case $1 in
 esac; shift; done
 
 set -eu
-
+rm -rf dist
 python -m build
 
 
 if [[ "${install}" ]]; then
+    pip uninstall -y docker-load-graph || echo "not installed!"
     tar_to_install=$(find dist -type f -name "*.tar.gz")
     pip install ${tar_to_install}
 fi
