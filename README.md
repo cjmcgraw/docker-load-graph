@@ -10,7 +10,7 @@ This project exists to solve that problem.
 Very simply this project uses [plotext](https://github.com/piccolomo/plotext) to display the current status
 of key [docker](https://www.docker.com/) container metrics in real time on the command line.
 
-![](.docs/0000-example.gif)
+![](https://raw.githubusercontent.com/cjmcgraw/docker-load-graph/main/.docs/0000-example.gif)
 
 ## How do I use it?
 
