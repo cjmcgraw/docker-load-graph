@@ -6,7 +6,6 @@ charset-normalizer==2.0.4
 colorama==0.4.4
 cryptography==3.4.8
 docker==5.0.0
-docker-load-graph @ file:///home/qarl/workspace/personal/docker-load-graph/dist/docker-load-graph-0.0.1.tar.gz
 docutils==0.17.1
 idna==3.2
 importlib-metadata==4.8.1
