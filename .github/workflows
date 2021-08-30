@@ -1,0 +1,6 @@
+name: docker-load-graph publish
+on: [push]
+jobs:
+  build and deploy to pip
+    runs-on: ubuntu-latest
+      - run: python3.8 --version
