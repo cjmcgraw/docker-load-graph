@@ -26,3 +26,20 @@ docker-load-graph
 ```
 
 It is just that simple.
+
+# Trouble Shooting:
+---
+
+> I cant find the command. `docker-load-graph` just doesn't seem to work
+
+Check out where its installed with `pip show docker-load-graph`
+
+It will be in a location like `/home/qarl/.local/lib/...`. It will also add a script to the bin in the same directory. Make sure that is available in your path
+and it should work just fine. My favorite way of doing this is adding it to the path in my `.bashrc` or `.zshrc` file:
+
+```
+echo 'export $PATH=${PATH}:$HOME/.local/bin' >> ${HOME}/.bashrc
+source ${HOME}/.bashrc
+```
+
+Will generally do it!
